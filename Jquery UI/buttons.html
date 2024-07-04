@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css" />
+</head>
+
+<body>
+
+    <button class="btn">Click me</button>
+    <a href="" class="btn">Link one</a>
+    <input type="submit" class="btn" value="submit btn">
+    <input type="reset" class="btn" value="reset btn">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+             
+            //* first Method 
+            var btnstyle = {
+                icon: "ui-icon-heart",
+                iconPosition: "top",
+                showLabel:true,
+                label:"my btn"
+            }
+            $('.btn').button(btnstyle)
+
+            //* second method 
+            // $('.btn').button({
+            //     icon: "ui-icon-heart",
+            //     iconPosition: "top",
+            //     showLabel:true,
+            //     label:"my btn"
+            // })
+         });
+    </script>
+</body>
+
+</html>
