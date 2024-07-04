@@ -1,0 +1,34 @@
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.app.bp5-dark {
+  /* $dark-gray2, see https://github.com/palantir/blueprint/blob/6d86a19b9e858c4cde66a253b1172dcf896872d8/packages/colors/src/_colors.scss#L13 */
+  background: #252a31;
+}
+
+.examples-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.logo {
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -1px;
+}
+
+.dark-theme-switch {
+  margin-bottom: 0;
+  vertical-align: baseline;
+}
+
+.example-datepicker {
+  display: inline-block;
+}
